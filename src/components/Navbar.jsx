@@ -8,11 +8,22 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="" className="mx-2 w-10" />
+        {/* <img src={logo} alt="" className="mx-2 w-10" /> */}
+        <p>
+          <span className="text-5xl">s</span>
+          <span className="text-4xl">r</span>
+        </p>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
+        <a
+          href="https://www.linkedin.com/in/elsayed-rady-elsayed-73b541288/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </a>
+        <a target="_blank" href="https://github.com/Elsayed-Rady-Elsayed">
+          <FaGithub />
+        </a>
         <FaInstagram />
       </div>
     </nav>

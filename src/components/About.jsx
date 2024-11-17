@@ -2,6 +2,7 @@ import React from "react";
 import aboutIme from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import aboutMe from "../assets/aboutme.jpeg";
 const About = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -19,7 +20,7 @@ const About = () => {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={aboutIme} alt="" />
+            <img className="rounded-2xl" src={aboutMe} alt="" />
           </div>
         </motion.div>
         <motion.div

@@ -1,6 +1,9 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 const Projects = () => {
   return (
     <div className="border-b pb-4 border-neutral-900">
@@ -35,9 +38,9 @@ const Projects = () => {
                 <img
                   src={el.image}
                   alt=""
-                  width={150}
-                  height={150}
-                  className="mb-6 rounded"
+                  width={200}
+                  height={200}
+                  className="mb-6 rounded w-full md:w-[230px]"
                 />
               </motion.div>
               <motion.div
@@ -51,7 +54,25 @@ const Projects = () => {
                 }}
                 className="w-full max-w-xl lg:w-3/4"
               >
-                <h6 className="mb-2 font-semibold">{el.title}</h6>
+                <div className="flex justify-between items-center">
+                  <h6 className="mb-2 font-semibold">{el.title}</h6>
+                  <div className="flex gap-4 text-lg text-neutral-400 mb-2">
+                    <a
+                      href={el.link}
+                      target="_blank"
+                      className="hover:text-purple-500"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                    <a
+                      href={el.repo}
+                      target="_blank"
+                      className="hover:text-white"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
                 <p className="mb-4 text-neutral-400">{el.description}</p>
                 <div className="flex flex-wrap">
                   {el.technologies.map((el, idx) => {
