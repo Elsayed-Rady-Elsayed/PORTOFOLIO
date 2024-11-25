@@ -31,7 +31,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Front-End Developer
+              Full-Stack Developer
             </motion.span>
             <motion.p
               initial={{ x: -100, opacity: 0 }}

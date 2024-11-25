@@ -1,5 +1,10 @@
 import React from "react";
-import { RiFlutterLine, RiGithubLine, RiReactjsLine } from "react-icons/ri";
+import {
+  RiFlutterLine,
+  RiGithubLine,
+  RiNodejsLine,
+  RiReactjsLine,
+} from "react-icons/ri";
 import { RiJavascriptLine } from "react-icons/ri";
 import { RiHtml5Line } from "react-icons/ri";
 import { RiCss3Line } from "react-icons/ri";
@@ -11,8 +16,9 @@ import { TbBrandVite } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { RiBootstrapLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
-import { SiJest, SiMysql } from "react-icons/si";
+import { SiExpress, SiJest, SiMysql } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
+import { DiMongodb } from "react-icons/di";
 
 const Technologies = () => {
   return (
@@ -134,6 +140,36 @@ const Technologies = () => {
         <motion.div
           initial={{ y: -10 }}
           transition={{
+            duration: 0.7,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          animate={{
+            y: 10,
+          }}
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiNodejsLine className="text-6xl text-green-700" />
+        </motion.div>
+        <motion.div
+          initial={{ y: -10 }}
+          transition={{
+            duration: 0.7,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          animate={{
+            y: 10,
+          }}
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiExpress className="text-6xl text-white" />
+        </motion.div>
+        <motion.div
+          initial={{ y: -10 }}
+          transition={{
             duration: 1.4,
             ease: "linear",
             repeat: Infinity,
@@ -145,6 +181,21 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <RiTailwindCssLine className="text-6xl text-teal-500" />
+        </motion.div>
+        <motion.div
+          initial={{ y: -10 }}
+          transition={{
+            duration: 1.4,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          animate={{
+            y: 10,
+          }}
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <DiMongodb className="text-6xl text-green-500" />
         </motion.div>
         <motion.div
           initial={{ y: -10 }}
