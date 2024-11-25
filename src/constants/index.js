@@ -6,6 +6,7 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
+import project9 from "../assets/projects/project-9.png";
 
 export const HERO_CONTENT = `I am a passionate front end developer with a knack for crafting robust and scalable web applications. With 3 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, php. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -195,6 +196,27 @@ export const PROJECTS = [
       "Json-Server",
       "Restful Api",
       "Filtering items",
+    ],
+  },
+  {
+    title: "Courses Management",
+    image: project9,
+    repo: "https://github.com/Elsayed-Rady-Elsayed/NODEJS-COURSES-PROJECT",
+    link: "https://github.com/Elsayed-Rady-Elsayed/NODEJS-COURSES-PROJECT",
+    description:
+      "Courses backend with validator and jwt auth and courses management and pages with limit",
+    technologies: [
+      "Node",
+      "Express",
+      "Cors",
+      "Dotenv",
+      "express-validator",
+      "Jsend",
+      "Jsonwebtoken",
+      "Jwt",
+      "Mongoose",
+      "Multer",
+      "Validator",
     ],
   },
 ];
