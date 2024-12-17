@@ -3,7 +3,7 @@ import logo from "../assets/kevinRushLogo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
+import myCvFrontEnd from "../assets/elsayedRadyFrontEndCV2.pdf";
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
@@ -24,7 +24,9 @@ const Navbar = () => {
         <a target="_blank" href="https://github.com/Elsayed-Rady-Elsayed">
           <FaGithub />
         </a>
-        <FaInstagram />
+        <a href={myCvFrontEnd} download={"myCvFrontEnd"} target="_blank">
+          CV
+        </a>
       </div>
     </nav>
   );
