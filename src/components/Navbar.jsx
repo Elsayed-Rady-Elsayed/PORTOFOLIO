@@ -1,6 +1,6 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import myCvFrontEnd from "../assets/elsayedRadyFrontEndCV2.pdf";
+import myCvFrontEnd from "../assets/17-12-2024cv.pdf";
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
